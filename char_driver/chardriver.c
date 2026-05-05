@@ -16,7 +16,7 @@ static int my_char_file_close(struct inode* char_test_inode, struct file* my_cha
 
 static ssize_t my_char_file_read(struct file* my_char_file, char __user* buffer, size_t length, loff_t* my_char_offset){
 	printk(KERN_NOTICE "my char file is being read\n");
-	return length;
+	return 0;
 }
 
 static ssize_t my_char_file_write(struct file *my_char_file, const char __user *buffer, size_t length, loff_t *my_char_offset){
