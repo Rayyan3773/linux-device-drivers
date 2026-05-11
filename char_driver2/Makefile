@@ -6,6 +6,7 @@ obj-m:=filedev.o
 obj-m:=filedev2.o
 obj-m:=chardev.o
 obj-m:=fileopr.o
+obj-m:=fileopr2.o
 
 kerndir:= /usr/src/linux-headers-$(shell uname -r)
 pwd:= $(shell pwd)
