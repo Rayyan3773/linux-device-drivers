@@ -15,7 +15,9 @@ static struct device* device=NULL;
 static struct cdev mycdev;
 
 static int device_open(struct inode* inode, struct file* file){
-	pr_info("%s File: %p inode: %p\n", __func__, file, inode);
+	pr_info("%s File: %p inode: %p\n", __func__, file, inode); //to check the file and inode numbers, 
+								   //when we call the userapp multiple times: the file number might change, but the inode number will remain same
+								   //as file is closed through release function the file changes, but inode internally points to the same location of file
 	return 0;
 
 }
