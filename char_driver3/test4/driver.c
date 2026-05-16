@@ -80,4 +80,5 @@ module_init(test_init);
 module_exit(test_exit);
 
 MODULE_LICENSE("GPL");
+MODULE_DESCRIPTION("ex: copy_from_user");
 
